@@ -89,9 +89,9 @@ router.post('/login',
   req.session.username=req.user.username;
   res.send({
 
-  });
+
         username: req.user.username,
-    });
+  })  });
 
 router.get('loginfail', (req,res)=>{
   res.send({});
